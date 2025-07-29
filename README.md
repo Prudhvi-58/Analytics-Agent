@@ -78,24 +78,16 @@ To get this agent system running locally:
 
 To run the agents:
 
-1.  **Activate your virtual environment** (if not already active):
+1.  **Start the agent application:**
     ```bash
-    source venv/bin/activate
+    adk web
     ```
 
-2.  **Start the agent application:**
-    ```bash
-    python3 main.py # Or whatever your main entry point file is called
-    ```
-    (You might need to adjust the command based on how you start your ADK agent, e.g., `adk run main.py` or similar if you are using an ADK CLI).
-
-3.  **Interact with the agent:**
+2.  **Interact with the agent:**
     Once the agent is running, you can typically interact with it via a local web interface (e.g., `http://localhost:8080`) or through a CLI, depending on your ADK setup.
 
     **Example Query:**
     "Can you plot the website visits by month from this data?
     `{ \"month\": [\"Jan\", \"Feb\", \"Mar\", \"Apr\"], \"website_visits\": [12000, 13500, 15000, 14800] }`"
 
-    The agent should respond with a confirmation that the plot has been generated, which you can then view in your Colab or local execution environment output.
-
-## Project Structure
+    The agent should respond with a confirmation that the plot has been generated, which you can then view in your local.
