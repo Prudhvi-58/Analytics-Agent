@@ -55,9 +55,7 @@ root_agent = Agent(
 
     """,
  
-    tools=[call_analytics_agent,
-        load_artifacts,
-    ],
+    tools=[call_analytics_agent],
     generate_content_config=types.GenerateContentConfig(temperature=0.01),
 )
 

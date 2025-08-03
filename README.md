@@ -1,4 +1,4 @@
-# Analytics Agent
+# analytics Agent
 
 This repository hosts a multi-agent system designed to assist users with data analysis and visualization tasks using Google's Agent Development Kit (ADK).
 
@@ -15,17 +15,17 @@ This repository hosts a multi-agent system designed to assist users with data an
 
 ## Overview
 
-The system consists of a `Root Agent` that acts as a central dispatcher, understanding user intent and delegating complex data analysis and plotting requests to a specialized `Analytics Agent`.
+The system consists of a `Root Agent` that acts as a central dispatcher, understanding user intent and delegating complex data analysis and plotting requests to a specialized `analytics Agent`.
 
 ## Architecture
 
 - **Root Agent (`DA_Agent`):**
     - Built with `gemini-2.5-flash`.
     - Responsible for interpreting user queries.
-    - Delegates plotting and complex analysis tasks to the `Analytics_agent` via the `call_analytics_agent` tool.
+    - Delegates plotting and complex analysis tasks to the `analytics_agent` via the `call_analytics_agent` tool.
     - Provides confirmation messages to the user upon successful task completion.
 
-- **Analytics Agent (`Analytics_agent`):**
+- **analytics Agent (`analytics_agent`):**
     - Specialized in data manipulation and visualization.
     - Utilizes the `vertexaicodeexecutor` to run Python code (e.g., using `pandas` and `matplotlib`) in a secure sandbox environment to generate plots.
     - Designed to return specific data insights or confirmation of plot generation.
@@ -42,8 +42,8 @@ To get this agent system running locally:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/Prudhvi-58/Analytics-Agent.git](https://github.com/Prudhvi-58/Analytics-Agent.git)
-    cd Analytics-Agent
+    git clone [https://github.com/Prudhvi-58/analytics-Agent.git](https://github.com/Prudhvi-58/analytics-Agent.git)
+    cd analytics-Agent
     ```
 
 2.  **Create a virtual environment (recommended):**
@@ -80,7 +80,7 @@ To run the agents:
 
 1.  **Start the agent application:**
     ```bash
-    adk web
+    adk web 
     ```
 
 2.  **Interact with the agent:**

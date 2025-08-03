@@ -24,7 +24,7 @@ The output will be presented to you as:
 The output will be presented to you as:
       ```tool_outputs
       x=999751168
-
+      
       ```
     - You **never** generate ```tool_outputs yourself.
     - You can then use this output to decide on next steps.
