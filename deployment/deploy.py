@@ -146,7 +146,7 @@ def main(argv: list[str]) -> None:
     env_vars = {
         "ROOT_AGENT_MODEL": os.getenv("ROOT_AGENT_MODEL"),
         "analytics_AGENT_MODEL": os.getenv("analytics_AGENT_MODEL"),
-        "CODE_INTERPRETER_EXTENSION_NAME": os.getenv("CODE_INTERPRETER_EXTENSION_NAME"),
+    
         # Add any other specific environment variables your agents need
         # e.g., "BQ_DATASET_ID": os.getenv("BQ_DATASET_ID"),
         # IMPORTANT: Do NOT include GOOGLE_CLOUD_PROJECT or GOOGLE_CLOUD_LOCATION here,

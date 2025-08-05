@@ -91,3 +91,24 @@ To run the agents:
     `{ \"month\": [\"Jan\", \"Feb\", \"Mar\", \"Apr\"], \"website_visits\": [12000, 13500, 15000, 14800] }`"
 
     The agent should respond with a confirmation that the plot has been generated, which you can then view in your local.
+
+## Deployment to Agent Engine
+
+    After you have developed and tested your agent locally, you can deploy it to the Agent Engine for production use.
+
+1.  **Package your agent:**
+    First, you need to create a .whl file for your agent. From the deployment directory, run this command:
+    ```bash
+    poetry build --format=wheel --output=deployment
+    ```
+    This will create a file named analytics_agent-0.1-py3-none-any.whl in the deployment directory.
+
+2.  **Deploy using the provided script:**
+    Then run the below command to create a staging bucket in your GCP project and deploy the agent to Vertex AI Agent Engine:
+
+    ```bash
+    cd deployment/
+    python3 deploy.py --create
+    ```
+When this command returns, if it succeeds it will print an AgentEngine resource name that looks something like this:
+`projects/************/locations/us-central1/reasoningEngines/******`
